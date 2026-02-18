@@ -17,4 +17,4 @@ where area >=3000000 OR population >= 25000000;
 -- Link: https://leetcode.com/problems/find-customer-referee/
 
 select name from `Customer`
-WHERE referee_id != 2 OR referee_id IS NULL;
+WHERE referee_id != 2 OR referee_id IS NULL
