@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h2>Student Registration</h2>
+
+    <form action="#">
+
+        <div>
+            <label for="full_name">Full Name:</label>
+            <input type="text" id="full_name" name="full_name" 
+                   required maxlength="50" placeholder="e.g. Mohamed Hagag" 
+                   autocomplete="name">
+        </div>
+
+        <div>
+            <label for="user_email">Email Address:</label>
+            <input type="email" id="user_email" name="user_email" 
+                   required placeholder="name@example.com" 
+                   autocomplete="email">
+        </div>
+
+        <div>
+            <label for="user_pass">Password:</label>
+            <input type="password" id="user_pass" name="user_pass" 
+                   required minlength="8" maxlength="30" placeholder="At least 8 characters">
+                   
+        </div>
+
+        <div>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+        </div>
+
+        <div>
+            <label for="depart">Department:</label>
+            <select id="depart" name="department" required>
+                <option value="" disabled selected>-- Choose Department --</option>
+                <option value="CS">Computer Science (CS)</option>
+                <option value="IT">Information Technology (IT)</option>
+                <option value="IS">Information Systems (IS)</option>
+            </select>
+        </div>
+
+        <fieldset>
+            <legend>Gender</legend>
+            <input type="radio" name="gender" value="Male" id="male" required>
+            <label for="male">Male</label>
+            
+            <input type="radio" name="gender" value="Female" id="female">
+            <label for="female">Female</label>
+            
+            <input type="radio" name="gender" value="bsklth" id="bsklth">
+            <label for="bsklth">Bsklth</label>
+        </fieldset>
+
+        <br>
+        <button type="submit">Create Account</button>
+        <button type="reset">Clear Form</button>
+
+    </form>
+
+</body>
+</html>
